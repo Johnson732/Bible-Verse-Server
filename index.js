@@ -15,8 +15,8 @@ app.get("/", async (req, res) => {
       "Content-Type":"application/json",
     },
   });
-  res.send("server running");
-  //res.json(response.data);
+  //res.send("server running");
+  res.json(response.data);
 });
 
 const PORT = process.env.PORT || 3000;
