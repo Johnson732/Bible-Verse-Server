@@ -9,7 +9,7 @@ app.use(express.json());
 const url = "https://bible-api.com/?random=verse";
 
 
-app.get("/verse", async (req, res) => {
+app.get("/", async (req, res) => {
   const response = await axios.get(url,{
     headers:{
       "Content-Type":"application/json",
